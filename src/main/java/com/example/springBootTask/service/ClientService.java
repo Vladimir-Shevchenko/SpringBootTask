@@ -118,7 +118,7 @@ if(client.getLimitItog()>0.0){client.setDecision("accept");}
         }
 
 
-        return 0.0;
+        return 1;
     }
 
 
