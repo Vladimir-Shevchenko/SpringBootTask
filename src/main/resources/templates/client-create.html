@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Create user</title>
+</head>
+<body>
+<form action="#" th:action="@{/client-create}" th:object="${client}"  method="post">
+    <table>
+        <tbody>
+        <tr>
+            <td> <label for="idClient">ID</label></td>
+            <td> <input type="text" th:field="*{idClient}" id="idClient" placeholder="ID"></td>
+        </tr>
+        <tr>
+            <td> <label for="dateBirthday">Date of birthday</label></td>
+            <td><input type="text" name="dateBirthday" id="dateBirthday" placeholder="dateBirthday"></td>
+        </tr>
+        <tr>
+        <td> <label for="phone">Phone</label></td>
+        <td>  <input type="text" th:field="*{phone}" id="phone" placeholder="Phone"></td>
+        </tr>
+        <tr>
+            <td><label for="mail">Mail</label></td>
+            <td><input type="text" th:field="*{mail}" id="mail" placeholder="mail"></td>
+        </tr>
+        <tr>
+            <td><label for="address">Address</label></td>
+            <td><input type="text" th:field="*{address}" id="address" placeholder="address"></td>
+        </tr>
+        </tr>
+        <td><label for="monthSalary">Month salary</label></td>
+        <td><input type="text" th:field="*{monthSalary}" id="monthSalary" placeholder="Month salary"></td>
+        </tr>
+        <tr>
+            <td><label for="CurrSalary">Currency salary</label></td>
+            <td><input type="text" th:field="*{CurrSalary}" id="CurrSalary" placeholder="Currency salary"></td>
+        </tr>
+        <tr>
+            <td><label for="requestLimit">Request limit</label></td>
+            <td><input type="text" name="requestLimit" id="requestLimit" placeholder="Request limit" required></td>
+        </tr>
+
+<tr>
+    <td><input type="submit" value="Create Client"></td>
+</tr>
+        </tbody>
+    </table>
+
+</form>
+</body>
+</html>
